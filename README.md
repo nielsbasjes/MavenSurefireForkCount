@@ -32,9 +32,40 @@ $ echo $JAVA_HOME
 /usr/lib/jvm/java-11-openjdk-amd64/
 ```
 
-Toolchains to make them all available to maven:
+Full list of exact versions
+```text
+openjdk-11-demo/focal-updates,focal-security,now 11.0.16+8-0ubuntu1~20.04 amd64 [installed]
+openjdk-11-doc/focal-updates,focal-updates,focal-security,focal-security,now 11.0.16+8-0ubuntu1~20.04 all [installed]
+openjdk-11-jdk/focal-updates,focal-security,now 11.0.16+8-0ubuntu1~20.04 amd64 [installed]
+openjdk-11-jdk-headless/focal-updates,focal-security,now 11.0.16+8-0ubuntu1~20.04 amd64 [installed]
+openjdk-11-jre-dcevm/focal,now 11.0.3+1-1 amd64 [installed]
+openjdk-11-jre/focal-updates,focal-security,now 11.0.16+8-0ubuntu1~20.04 amd64 [installed]
+openjdk-11-jre-headless/focal-updates,focal-security,now 11.0.16+8-0ubuntu1~20.04 amd64 [installed]
+openjdk-11-jre-zero/focal-updates,focal-security,now 11.0.16+8-0ubuntu1~20.04 amd64 [installed]
+openjdk-11-source/focal-updates,focal-updates,focal-security,focal-security,now 11.0.16+8-0ubuntu1~20.04 all [installed]
+openjdk-17-dbg/focal-updates,focal-security,now 17.0.4+8-1~20.04 amd64 [installed]
+openjdk-17-demo/focal-updates,focal-security,now 17.0.4+8-1~20.04 amd64 [installed]
+openjdk-17-doc/focal-updates,focal-updates,focal-security,focal-security,now 17.0.4+8-1~20.04 all [installed]
+openjdk-17-jdk/focal-updates,focal-security,now 17.0.4+8-1~20.04 amd64 [installed]
+openjdk-17-jdk-headless/focal-updates,focal-security,now 17.0.4+8-1~20.04 amd64 [installed]
+openjdk-17-jre/focal-updates,focal-security,now 17.0.4+8-1~20.04 amd64 [installed]
+openjdk-17-jre-headless/focal-updates,focal-security,now 17.0.4+8-1~20.04 amd64 [installed]
+openjdk-17-jre-zero/focal-updates,focal-security,now 17.0.4+8-1~20.04 amd64 [installed]
+openjdk-17-source/focal-updates,focal-updates,focal-security,focal-security,now 17.0.4+8-1~20.04 all [installed]
+openjdk-8-dbg/focal-updates,focal-security,now 8u342-b07-0ubuntu1~20.04 amd64 [installed]
+openjdk-8-demo/focal-updates,focal-security,now 8u342-b07-0ubuntu1~20.04 amd64 [installed]
+openjdk-8-doc/focal-updates,focal-updates,focal-security,focal-security,now 8u342-b07-0ubuntu1~20.04 all [installed]
+openjdk-8-jdk/focal-updates,focal-security,now 8u342-b07-0ubuntu1~20.04 amd64 [installed]
+openjdk-8-jdk-headless/focal-updates,focal-security,now 8u342-b07-0ubuntu1~20.04 amd64 [installed]
+openjdk-8-jre/focal-updates,focal-security,now 8u342-b07-0ubuntu1~20.04 amd64 [installed]
+openjdk-8-jre-headless/focal-updates,focal-security,now 8u342-b07-0ubuntu1~20.04 amd64 [installed]
+openjdk-8-jre-zero/focal-updates,focal-security,now 8u342-b07-0ubuntu1~20.04 amd64 [installed]
+openjdk-8-source/focal-updates,focal-updates,focal-security,focal-security,now 8u342-b07-0ubuntu1~20.04 all [installed]
+```
+
+
+Toolchains (  ~/.m2/toolchains.xml ) to make them all available to maven:
 ```xml
-$ cat ~/.m2/toolchains.xml
 <?xml version="1.0" encoding="UTF8"?>
 <toolchains>
   <toolchain>
